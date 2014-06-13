@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+        <catalog>
+            <products>
+                <product>
+                    <node1>123</node1>
+                    <node2>345</node2>
+                </product>
+                <product>
+                    <node1>123a</node1>
+                    <node2>345a</node2>
+                </product>
+            </products>
+        </catalog>
