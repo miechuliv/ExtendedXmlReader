@@ -13,6 +13,7 @@ class CoreTest extends PHPUnit_Framework_TestCase{
         public function testFindNode()
         {
             $reader = new ExtendedXmlReader();
+
             $reader->open(__DIR__.'/files/test.xml');
 
             $nodeName = $reader->findNodeByPath(array(
@@ -23,4 +24,5 @@ class CoreTest extends PHPUnit_Framework_TestCase{
 
             $this->assertEquals('product',$nodeName);
         }
+
 }

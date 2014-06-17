@@ -7,6 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
+
 class ExtendedXmlReader extends XMLReader{
 
 
@@ -56,5 +57,27 @@ class ExtendedXmlReader extends XMLReader{
 
         return false;
     }
+
+    public function hasChildNodesXML($node)
+    {
+        $children = $node->hasChildNodes();
+
+        if($children)
+        {
+            foreach($node->childNodes as $cnode)
+            {
+                if($cnode->nodeType == XML_ELEMENT_NODE)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+
+    }
+
+
+
 
 }
